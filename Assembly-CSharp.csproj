@@ -115,6 +115,7 @@
     <Compile Include="Assets\_Scripts\UI\ToolTip.cs" />
     <Compile Include="Assets\_Scripts\UI\Tooltips\med1_tooltip.cs" />
     <Compile Include="Assets\_Scripts\UI\Tooltips\MedTooltip.cs" />
+    <Compile Include="Assets\_Scripts\UI\Fader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

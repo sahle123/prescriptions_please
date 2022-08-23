@@ -5,6 +5,7 @@ public class ArrivalEventHandler : MonoBehaviour
     public delegate void ArrivalAction();
     public static event ArrivalAction OnArrival;
     public static event ArrivalAction OnExit;
+    public static event ArrivalAction OnExitScene;
 
     // Tag we are looking for in the trigger
     [SerializeField] private string Tag = "Patient";
@@ -23,5 +24,11 @@ public class ArrivalEventHandler : MonoBehaviour
     {
         Debug.Log("OnExit event");
         OnExit();
+    }
+
+    public static void ExitScene()
+    {
+        Debug.Log("Exiting scene");
+        OnExitScene();
     }
 }

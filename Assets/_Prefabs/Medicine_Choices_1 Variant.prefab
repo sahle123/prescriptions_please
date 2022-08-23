@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7843207013324426936
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6514890675453762722, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_Name
+      value: Medicine_Choices_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0045718
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.94168156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.9500923
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+--- !u!1 &2941165327049292415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4902649166464414919, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+  m_PrefabInstance: {fileID: 7843207013324426936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &223957483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2941165327049292415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16715422e6ab3cb4e8587d96b5b9a92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tooltipText: '<color=#00ff00>Antibiotic 2</color>
+
+    <color=#ff0000>Please initialize</color>'
+--- !u!1 &3940968207881540122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6514890675453762722, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+  m_PrefabInstance: {fileID: 7843207013324426936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &342046737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940968207881540122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d0dded85b9d204dbfd18c804785221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4338963151756774206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5832087602415977862, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+  m_PrefabInstance: {fileID: 7843207013324426936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &718262237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4338963151756774206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16715422e6ab3cb4e8587d96b5b9a92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tooltipText: "<color=#00ff00>Fancomycin</color>\r\n--- \n<color=#ff0000>Super
+    common antibiotic</color>"
+--- !u!1 &5571872479527722549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2417288713186332813, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+  m_PrefabInstance: {fileID: 7843207013324426936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1355722394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5571872479527722549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16715422e6ab3cb4e8587d96b5b9a92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tooltipText: '<color=#00ff00>Medicine 3</color>
+
+    <color=#ff0000>Please initialize</color>'

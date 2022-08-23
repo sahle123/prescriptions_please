@@ -5,7 +5,7 @@ using TMPro;
 public class ToolTip : MonoBehaviour
 {
     public static ToolTip Instance { get; private set; }
-    [SerializeField] private Vector2 _padding = new Vector2(8, 8);
+    [SerializeField] private Vector2 _padding = new Vector2(30, 20);
 
     private TextMeshProUGUI _tooltipText;
     private RectTransform _backgroundRectTransform;
