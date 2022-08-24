@@ -23,7 +23,7 @@ public class RotateMoveCamera : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = true;
+        Cursor.visible = false;
     }
 
     void FixedUpdate()

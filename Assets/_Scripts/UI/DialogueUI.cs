@@ -8,6 +8,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text _textLabel;
     [SerializeField] private DialogueObject _dialogueObject;
     [SerializeField] private DialogueObject _exitDialogueObject;
+    [SerializeField] private DialogueObject _exitNegativeDialogueObject;
     [SerializeField] private AudioClip[] _voiceFX;
 
     private TypeWriterEffect _typeWriterEffect;
@@ -15,6 +16,10 @@ public class DialogueUI : MonoBehaviour
 
     private void Start()
     {
+        // Default
+        if (_exitNegativeDialogueObject == null)
+            _exitNegativeDialogueObject = _exitDialogueObject;
+
         _typeWriterEffect = GetComponent<TypeWriterEffect>();
         _audioSource = GetComponent<AudioSource>();
         //ShowDialogue();
@@ -26,12 +31,14 @@ public class DialogueUI : MonoBehaviour
     {
         ArrivalEventHandler.OnArrival += ShowDialogue;
         ArrivalEventHandler.OnExit += ShowExitDialogue;
+        ArrivalEventHandler.OnNoPrescription += ShowNoPrescriptionExitDialogue;
     }
 
     private void OnDisable()
     {
         ArrivalEventHandler.OnArrival -= ShowDialogue;
         ArrivalEventHandler.OnExit -= ShowExitDialogue;
+        ArrivalEventHandler.OnNoPrescription -= ShowNoPrescriptionExitDialogue;
     }
     #endregion
 
@@ -47,6 +54,13 @@ public class DialogueUI : MonoBehaviour
     {
         ShowDialogueBox();
         StartCoroutine(StepThroughDialogue(_exitDialogueObject));
+    }
+
+    // Goodbye dialogue for no prescription given.
+    public void ShowNoPrescriptionExitDialogue()
+    {
+        ShowDialogueBox();
+        StartCoroutine(StepThroughDialogue(_exitNegativeDialogueObject));
     }
 
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)

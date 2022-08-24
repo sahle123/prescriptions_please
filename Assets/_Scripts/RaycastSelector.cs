@@ -1,17 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RaycastSelector : MonoBehaviour
 {
     public LayerMask Mask;
     public Color SelectColor = Color.blue;
+    public AudioClip CashRegister;
+
+    private AudioSource _audioSource;
 
     Camera _cam;
 
     void Start()
     {
         _cam = Camera.main;
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -30,12 +32,24 @@ public class RaycastSelector : MonoBehaviour
 
             if(Physics.Raycast(ray, out hit, 100, Mask))
             {
+                Debug.Log(hit.transform.GetComponent<MedPrice>().Value);
                 Debug.Log(hit.transform.name);
-                ArrivalEventHandler.StartExit();
+                StateController.PlayerScore += hit.transform.GetComponent<MedPrice>().Value;
+
+                if (hit.transform.name == "No_prescription")
+                {
+                    ArrivalEventHandler.NoPrescriptionExit();
+                }
+                else
+                {
+                    _audioSource.PlayOneShot(CashRegister);
+                    ArrivalEventHandler.StartExit();
+                }
 
                 //hit.transform.GetComponent<Renderer>().material.color = SelectColor;
                 //Destroy(hit.transform.gameObject);
-                Destroy(this.gameObject);
+
+                //Destroy(this.gameObject);
             }
         }
     }

@@ -90,6 +90,7 @@
     <Compile Include="Assets\Pharmacy\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
     <Compile Include="Assets\Pharmacy\PostProcessing\Editor\Models\DitheringModelEditor.cs" />
     <Compile Include="Assets\Pharmacy\PostProcessing\Editor\Monitors\VectorscopeMonitor.cs" />
+    <Compile Include="Assets\RainMaker\Editor\RainMakerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

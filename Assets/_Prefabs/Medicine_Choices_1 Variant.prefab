@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6514890675453762720, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
+      propertyPath: CashRegister
+      value: 
+      objectReference: {fileID: 8300000, guid: 27c40cc5b3ce47340bbe57b55b927c08, type: 3}
     - target: {fileID: 6514890675453762722, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
       propertyPath: m_Name
-      value: Medicine_Choices_1
+      value: Medicine_Choices_1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6514890675453762723, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
       propertyPath: m_RootOrder
@@ -74,14 +78,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16715422e6ab3cb4e8587d96b5b9a92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tooltipText: '<color=#00ff00>Antibiotic 2</color>
+  _tooltipText: '<color=#00ff00>Fortameta</color>
 
-    <color=#ff0000>Please initialize</color>'
+    <color=#e0ad34>100 SR</color>
+
+    <color=#ff0000>Risk:
+    Medium</color>
+
+    Side-effects:
+
+    loss of balance
+
+    lower back or side
+    pain
+
+    painful or difficult urination'
+--- !u!114 &4444178868302131764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2941165327049292415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d444b60fa3aa5e64b9d2fbc5a0fde2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: 100
 --- !u!1 &3940968207881540122 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6514890675453762722, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
   m_PrefabInstance: {fileID: 7843207013324426936}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1468008969791022512
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940968207881540122}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &342046737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d0dded85b9d204dbfd18c804785221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _delaySeconds: 3
 --- !u!1 &4338963151756774206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5832087602415977862, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
@@ -111,8 +237,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16715422e6ab3cb4e8587d96b5b9a92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tooltipText: "<color=#00ff00>Fancomycin</color>\r\n--- \n<color=#ff0000>Super
-    common antibiotic</color>"
+  _tooltipText: '<color=#00ff00>Metformint</color>
+
+    <color=#e0ad34>300 SR</color>
+
+    <color=#ff0000>Risk:
+    High</color>
+
+    Side-effects:
+
+    feeling of fullness in the ears
+
+    fever
+    with or without chills
+
+    general feeling of tiredness or weakness
+
+    hearing
+    loss'
+--- !u!114 &3201159702769516091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4338963151756774206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d444b60fa3aa5e64b9d2fbc5a0fde2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: 300
 --- !u!1 &5571872479527722549 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2417288713186332813, guid: d58e8e53cc7a85940a27771198228e37, type: 3}
@@ -130,6 +285,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16715422e6ab3cb4e8587d96b5b9a92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tooltipText: '<color=#00ff00>Medicine 3</color>
+  _tooltipText: '<color=#00ff00>Gluemetzak</color>
 
-    <color=#ff0000>Please initialize</color>'
+    <color=#e0ad34>50 SR</color>
+
+    <color=#ff0000>Risk:
+    Low</color>
+
+    Side-effects:
+
+    pinpoint red spots on the skin
+
+    ringing
+    or buzzing in the ears'
+--- !u!114 &1556302076650190912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5571872479527722549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d444b60fa3aa5e64b9d2fbc5a0fde2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: 50

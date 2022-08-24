@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Fader : MonoBehaviour
 {
     public int TimeTillFade = 2;
+    public int ScoreThreshold = 350;
     public string NextScene;
     private Animator _animator;
 
@@ -32,11 +33,13 @@ public class Fader : MonoBehaviour
     private void OnEnable()
     {
         ArrivalEventHandler.OnExit += StartFadeIn;
+        ArrivalEventHandler.OnNoPrescription += StartFadeIn;
     }
 
     private void OnDisable()
     {
         ArrivalEventHandler.OnExit -= StartFadeIn;
+        ArrivalEventHandler.OnNoPrescription -= StartFadeIn;
     }
     #endregion
 
@@ -44,7 +47,16 @@ public class Fader : MonoBehaviour
     {
         yield return new WaitForSeconds(waitSeconds);
         _animator.SetBool("FadeIn", true);
-        yield return new WaitForSeconds(waitSeconds + 5);
-        SceneManager.LoadScene(NextScene);
+        yield return new WaitForSeconds(waitSeconds + 3);
+
+        if (NextScene == "none")
+        {
+            Debug.Log("EXIT WINDOW");
+            Application.Quit();
+        }
+        else if(StateController.PlayerScore > ScoreThreshold)
+            SceneManager.LoadScene("Scene_4_2_bad");
+        else
+            SceneManager.LoadScene(NextScene);
     }
 }

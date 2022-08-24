@@ -7,8 +7,17 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_Scenes/Scene_1_normal.unity
-    guid: 551474f2448353340835f0d412908fd3
+    guid: 1e64a309e5bfccc4c898660b5e203086
   - enabled: 1
-    path: Assets/_Scenes/Sandbox.unity
-    guid: 59a890f5ead42d640a09335787cae66f
+    path: Assets/_Scenes/Scene_2_no_prescription.unity
+    guid: 201a19491c61b424f8ddb5a7bae32b52
+  - enabled: 1
+    path: Assets/_Scenes/Scene_3_ssri.unity
+    guid: ad93c6f59ca36e848b1dd4c5632bcad1
+  - enabled: 1
+    path: Assets/_Scenes/Scene_4_1_good.unity
+    guid: 7c94b9787feb77143a8699f08170472f
+  - enabled: 1
+    path: Assets/_Scenes/Scene_4_2_bad.unity
+    guid: b425360d5fafcbe408450b2ae09a8d6b
   m_configObjects: {}

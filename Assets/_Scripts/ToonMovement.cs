@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ToonMovement : MonoBehaviour
@@ -89,15 +87,22 @@ public class ToonMovement : MonoBehaviour
         _reverseDirection = !_reverseDirection;
     }
 
+    private void NoPrescriptionExit()
+    {
+        _reverseDirection = !_reverseDirection;
+    }
+
     #region For ArrivalEventHandler
     private void OnEnable()
     {
         ArrivalEventHandler.OnExit += StartExit;
+        ArrivalEventHandler.OnNoPrescription += NoPrescriptionExit;
     }
 
     private void OnDisable()
     {
         ArrivalEventHandler.OnExit -= StartExit;
+        ArrivalEventHandler.OnNoPrescription -= NoPrescriptionExit;
     }
     #endregion
 }

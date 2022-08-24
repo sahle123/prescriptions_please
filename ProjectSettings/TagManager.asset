@@ -8,6 +8,7 @@ TagManager:
   - Door_Trigger
   - Patient
   - Pathing
+  - Police
   layers:
   - Default
   - TransparentFX
